@@ -57,7 +57,7 @@ public class Alumno {
 
     @Override
     public String toString() {
-        return apellido+","+nombre;//re definimos para ver en los combos solo esto
+        return nombre+" " +apellido;//re definimos para ver en los combos solo esto
     }
 
     public void agregarMateria(Materia m){

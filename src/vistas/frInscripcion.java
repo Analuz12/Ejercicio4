@@ -60,6 +60,12 @@ public class frInscripcion extends javax.swing.JInternalFrame {
 
         jLabel3.setText("Elija un alumno ");
 
+        jcMaterias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jcMateriasActionPerformed(evt);
+            }
+        });
+
         jcAlumnos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcAlumnosActionPerformed(evt);
@@ -149,6 +155,10 @@ public class frInscripcion extends javax.swing.JInternalFrame {
     private void jcAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcAlumnosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jcAlumnosActionPerformed
+
+    private void jcMateriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcMateriasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jcMateriasActionPerformed
      private void llenarComboMateria(){
          
          for (Materia m : materiasTotal) {
