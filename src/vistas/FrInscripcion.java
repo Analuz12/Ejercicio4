@@ -13,13 +13,13 @@ import java.util.HashSet;
  *
  * @author Ana luz
  */
-public class frInscripcion extends javax.swing.JInternalFrame {
+public class FrInscripcion extends javax.swing.JInternalFrame {
     private HashSet <Alumno> alumnosTotal  = new HashSet <>(); 
     private HashSet <Materia> materiasTotal = new HashSet <>();
     /**
      * Creates new form frInscripcion
      */
-    public frInscripcion(HashSet <Alumno> alumnosTotal, HashSet <Materia> materiasTotal) {
+    public FrInscripcion(HashSet <Alumno> alumnosTotal, HashSet <Materia> materiasTotal) {
         initComponents();
         this.alumnosTotal= alumnosTotal;
         this.materiasTotal= materiasTotal;
@@ -27,7 +27,7 @@ public class frInscripcion extends javax.swing.JInternalFrame {
         llenarComboAlumno();//PARA PODER LLENAR LOS COMBOS RE DEFINIMOS EN CLASE ALUMNO Y MATERIA EL METODO TOSTRING ASI SOLO PONE LO MAS IMPORTANTE 
     }
 
-    frInscripcion() {
+    FrInscripcion() {
         
     }
 

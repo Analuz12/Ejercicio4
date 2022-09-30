@@ -13,12 +13,12 @@ import javax.swing.JOptionPane;
  *
  * @author Ana luz
  */
-public class frMateria extends javax.swing.JInternalFrame {
+public class FrMateria extends javax.swing.JInternalFrame {
  private HashSet <Materia> materiasTotal;
     /**
      * Creates new form frMateria
      */
-    public frMateria(HashSet <Materia> materiasTotal) {
+    public FrMateria(HashSet <Materia> materiasTotal) {
         initComponents();
         this.materiasTotal=materiasTotal;
     }
@@ -208,7 +208,7 @@ public class frMateria extends javax.swing.JInternalFrame {
 
        Materia m = new Materia (id,nombre,año);
        materiasTotal.add(m);
-       
+       this.setVisible(false);
        
         
     }//GEN-LAST:event_jtGuardarActionPerformed

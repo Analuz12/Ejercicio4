@@ -13,13 +13,13 @@ import javax.swing.JOptionPane;
  *
  * @author Ana luz
  */
-public class frAlumno extends javax.swing.JInternalFrame {
+public class FrAlumno extends javax.swing.JInternalFrame {
     private HashSet <Alumno> alumnosTotal; //no lo creo en blanco si no q lo recibe el constructor
 
     /**
      * Creates new form frAlumnos
      */
-    public frAlumno(HashSet <Alumno> alumnosTotal) {
+    public FrAlumno(HashSet <Alumno> alumnosTotal) {
         initComponents();
         this.alumnosTotal= alumnosTotal;
     }

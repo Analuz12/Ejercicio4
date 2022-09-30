@@ -13,7 +13,7 @@ import java.util.HashSet;
  *
  * @author Ana luz
  */
-public class frEscritorio extends javax.swing.JFrame {
+public class FrEscritorio extends javax.swing.JFrame {
     
     // 
     private HashSet <Alumno> alumnosTotal  = new HashSet <>(); //Para que no se genere repeticiones usamos el HashSet y ademas se importa la clase alumno 
@@ -24,7 +24,7 @@ public class frEscritorio extends javax.swing.JFrame {
     /**
      * Creates new form frEscritorio
      */
-    public frEscritorio() {
+    public FrEscritorio() {
         initComponents();
     }
 
@@ -130,7 +130,7 @@ public class frEscritorio extends javax.swing.JFrame {
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         //FORMULARIO DE INSCRIPCION 
-        frInscripcion i = new frInscripcion(alumnosTotal,materiasTotal);
+        FrInscripcion i = new FrInscripcion(alumnosTotal,materiasTotal);
         escritorio.add(i);
         i.show();
         //escritorio.moveToFront(l);//para traer al frente el formulario de almno*/
@@ -138,14 +138,14 @@ public class frEscritorio extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         //FORMULARIO 
-        frMateria m =new frMateria (materiasTotal);
+        FrMateria m =new FrMateria (materiasTotal);
         escritorio.add(m);//para agregar como componente el formulario de alumno
         m.show();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
 
-        frAlumno fn =new frAlumno (alumnosTotal);
+        FrAlumno fn =new FrAlumno (alumnosTotal);
         escritorio.add(fn);//para agregar como componente el formulario de alumno
         fn.show();
      
@@ -169,20 +169,21 @@ public class frEscritorio extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(frEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(frEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(frEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(frEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrEscritorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frEscritorio().setVisible(true);
+                new FrEscritorio().setVisible(true);
             }
         });
     }
